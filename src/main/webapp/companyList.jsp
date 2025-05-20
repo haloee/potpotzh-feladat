@@ -2,7 +2,7 @@
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="t" %>
-<t:page>
+<html>
     <style type="text/css">
         td {
             border: 1px solid black;
@@ -35,4 +35,4 @@
         </table>
     </div>
 
-</t:page>
+</html>
