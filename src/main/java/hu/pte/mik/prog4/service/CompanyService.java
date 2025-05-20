@@ -27,7 +27,7 @@ public class CompanyService {
         return this.companyRepository.save(company);
     }
 
-    public long getMovie(String movieId) {
+    public long getCompany(String movieId) {
         return 1;
     }
 }
