@@ -3,7 +3,7 @@ import java.util.Objects;
 public class CompanyEntity {
    private long id;
    private String nev;
-   private String alapitasiNev;
+   private String alapitasiEv;
    private String orszag;
    private String ismertTermek;
 
@@ -11,12 +11,12 @@ public class CompanyEntity {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         CompanyEntity that = (CompanyEntity) o;
-        return id == that.id && Objects.equals(nev, that.nev) && Objects.equals(alapitasiNev, that.alapitasiNev) && Objects.equals(orszag, that.orszag) && Objects.equals(ismertTermek, that.ismertTermek);
+        return id == that.id && Objects.equals(nev, that.nev) && Objects.equals(alapitasiEv, that.alapitasiEv) && Objects.equals(orszag, that.orszag) && Objects.equals(ismertTermek, that.ismertTermek);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nev, alapitasiNev, orszag, ismertTermek);
+        return Objects.hash(id, nev, alapitasiEv, orszag, ismertTermek);
     }
 
     public long getId() {
@@ -35,12 +35,12 @@ public class CompanyEntity {
         this.nev = nev;
     }
 
-    public String getAlapitasiNev() {
-        return alapitasiNev;
+    public String getAlapitasiEv() {
+        return alapitasiEv;
     }
 
-    public void setAlapitasiNev(String alapitasiNev) {
-        this.alapitasiNev = alapitasiNev;
+    public void setAlapitasiEv(String alapitasiEv) {
+        this.alapitasiEv = alapitasiEv;
     }
 
     public String getOrszag() {
